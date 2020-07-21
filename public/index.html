@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ANIME_FREE</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="public\css_anime.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <style>
+        .logo {
+            background-color: rgb(43, 37, 37);
+            text-align: center;
+            color: white;
+        }
+
+        ul.menu {
+            list-style-type: none;
+            margin: 0 20px;
+            padding: 0px;
+            overflow: hidden;
+            background-color: rgb(43, 37, 37);
+
+        }
+
+        ul.menu li {
+            background-color: rgb(37, 35, 35);
+            float: left;
+        }
+
+        ul.menu li a {
+            display: block;
+            padding: 3px;
+            text-decoration: none;
+            color: white;
+            font-size: 20px;
+            position: relative;
+            border-radius: 5px;
+
+        }
+
+        li a:hover {
+            background-color: #555;
+            color: rgb(255, 255, 255);
+        }
+
+        .active {
+            background-color: #4CAF50;
+        }
+
+        /*.search-container*/
+        .menu_search {
+            box-sizing: border-box;
+        }
+
+        .menu_search input[type=text] {
+            margin-top: 8px;
+            font-size: 15px;
+            border: none;
+
+        }
+
+        .menu_search input[type=text] {
+            padding: 2px;
+            margin-top: 1px;
+            border: none;
+            font-size: 17px;
+        }
+
+        .menu_search input[type=text] {
+            border: 2px solid #ccc;
+        }
+
+        .menu_search button {
+            width: auto;
+            padding: 4px;
+            background: #2196F3;
+            color: white;
+            font-size: 17px;
+            border: 1px solid grey;
+            border-left: none;
+            cursor: pointer;
+        }
+
+        /* body-left */
+        div.body-red h3 a {
+            text-decoration: none;
+            border-radius: 5px;
+            border: 1px solid black;
+            background-color: black;
+        }
+
+        .body-red {
+            width: 78.5%;
+            position: absolute;
+        }
+
+        .body-red h3 {
+            margin-top: 2%;
+            background-color: rgb(228, 85, 85);
+            padding: 1px;
+            border-radius: 5px;
+        }
+
+        div.body-red h3 {
+            width: 70%;
+            height: 500px;
+        }
+
+        div#body-content {
+            background-color: rgb(61, 53, 53);
+            width: 55%;
+            border: 1px solid rgb(228, 85, 85);
+            height: 1100px;
+        }
+
+        div#body-content {
+            position: absolute;
+            margin-top: 4.5%;
+        }
+
+        div.body-left {
+            width: 100%;
+            margin-left: 0px;
+        }
+
+        div div.body-left div {
+            background-color: black;
+            width: 23.5%;
+            float: left;
+            margin: 5px;
+            border: 1px solid black;
+            padding: 5px;
+            position: relative;
+
+        }
+
+        div div.body-left div div {
+            position: absolute;
+            bottom: 5px;
+            border: none;
+            opacity: 0.6;
+            /*opacity and filter ลดความเค้มแสง */
+            filter: alpha(opacity=40);
+            width: auto;
+            font-size: 13px;
+            color: white;
+            text-align: center;
+
+        }
+
+        div.body-left div img {
+            width: 100%;
+            height: 200px;
+        }
+
+        div ul.footer-bar li a {
+            padding: 5px;
+            color: rgb(252, 252, 252);
+            margin-left: 5px;
+        }
+
+        ul.footer-bar li {
+            float: left;
+        }
+
+        div ul.footer-bar {
+            padding: 5px;
+            text-decoration: none;
+            overflow: hidden;
+
+        }
+
+        ul.footer-bar {
+            position: absolute;
+            width: auto;
+            margin-left: center;
+            margin-top: 140%;
+        }
+
+        .footer-bar {
+            list-style-type: none;
+            margin: 0 20px;
+            padding: 0px;
+            overflow: hidden;
+            background-color: rgb(43, 37, 37);
+        }
+
+        div.content-head {
+            margin-left: 65%;
+        }
+
+        div.heading {
+            background-color: rgb(228, 85, 85);
+            border-radius: 5px;
+            ;
+            height: 50px;
+
+        }
+
+        h3.body-title {
+            width: 100%;
+        }
+
+        h3.body-title {
+            margin-top: 5.5%;
+        }
+
+        .content-body {
+            background-color: gray;
+            border: 1px solid rgb(228, 85, 85);
+            margin-top: -4%;
+            height: 300px;
+            width: 100%
+        }
+
+        /*หมวดแนะนำ*/
+
+        div#body-mid h3 {
+            border-radius: 5px;
+            background-color: rgb(228, 85, 85);
+            width: 35%;
+            margin-left: 65%;
+            margin-top: 5%;
+            height: 50px;
+        }
+
+        div.body-mid1 {
+            width: 35%;
+            height: auto;
+            margin-left: 65%;
+            margin-top: -2%;
+            background-color: rgb(41, 37, 37);
+            border: 1px solid rgb(228, 85, 85);
+        }
+
+        div.body-mid1 ul {
+            border-radius: 5px;
+            height: 400px;
+            list-style-type: none;
+            width: 93%;
+            margin-top: 4%;
+            margin-left: 3.5%;
+            background-color: #201e1e;
+        }
+
+        div.body-mid1 ul li a {
+            display: block;
+            color: rgb(255, 255, 255);
+            padding: 8px 16px;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body style="background: rgb(48, 46, 46);">
+    <header>
+        <nav>
+            <div class="container">
+                <div class="logo">
+                    <img src="picture/logo.png" width="150px" height="250px">
+                    <h2>ดูAnime ดูอนิเมะ ดูAnimeออนไลน์ บนคอมพิวเตอร์ บนมือถือ Full-HD</h2>
+                </div>
+                <ul class="menu">
+                    <li><a href="#1">หน้าแรก</a></li>
+                    <li><a href="#2">[ซับไทย]</a></li>
+                    <li><a href="#3">[พากไทย]</a></li>
+                    <li><a href="#4">[จบแล้ว]</a></li>
+                    <li><a href="#5">[ยังไม่จบ]</a></li>
+                    <li style="float: right;"><a class="active" href="#6">ติดต่อเรา</a></li>
+                    <div class="menu_search">
+                        <form action="saerch_bar" style="float: right;">
+                            <input type="text" placeholder="ค้นหา..." name="search">
+                            <button type="submit"><i class="fa fa-search"></i></button>
+
+                        </form>
+                    </div>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    </div>
+
+    <div class="container">
+        <div class="body-red">
+            <h3>
+                "อนิเมะอัพล่าสุด..." <a href="" style=" float: right; color: rgb(255, 255, 255);">ดูทั้งหมด>></a>
+            </h3>
+        </div>
+        <div id="body-content">
+            <div class="body-left">
+                <div>
+                    <a href=""><img title="Re Zero S2 รีเซทชีวิต ฝ่าวิกฤตต่างโลก ภาค2 ตอนที่ 1-3 ซับไทย (เมะใหม่)"
+                            src="picture/4.jpg" alt=""></a>
+                    <div>Re Zero S2 รีเซทชีวิต ฝ่าวิกฤตต่างโลก ภาค2 ตอนที่ 1-3 ซับไทย (เมะใหม่)</div>
+                </div>
+                <div>
+                    <a href=""><img title="Shingeki no Kyojin Season2 ผ่าพิภพไททัน ภาค2 ตอนที่ 1-12 ซับไทย [จบแล้ว]"
+                            src="picture/1.jpg" alt=""></a>
+                    <div>Shingeki no Kyojin Season2 ผ่าพิภพไททัน ภาค2 ตอนที่ 1-12 ซับไทย [จบแล้ว]</div>
+                </div>
+                <div>
+                    <a href=""><img title="Black Clover แบล็คโคลเวอร์ ตอนที่ 1-135 ซับไทย (+OVA)" src="picture/2.jpg"
+                            alt=""></a>
+                    <div>Black Clover แบล็คโคลเวอร์ ตอนที่ 1-135 ซับไทย (+OVA)</div>
+                </div>
+                <div>
+                    <a href=""><img title="Sword Art Online Alicization - War of Underworld ตอนที่ 0-12 ซับไทย "
+                            src="picture/3.jpg" alt=""></a>
+                    <div>Sword Art Online Alicization - War of Underworld ตอนที่ 0-12 ซับไทย</div>
+                </div>
+                <div>
+                    <a href=""><img title="The God of High School เทพเกรียน โรงเรียนมัธยม ตอนที่ 1-3 ซับไทย   "
+                            src="picture/5.jpg" alt=""></a>
+                    <div>The God of High School เทพเกรียน โรงเรียนมัธยม ตอนที่ 1-3 ซับไทย</div>
+                </div>
+                <div>
+                    <a href=""><img title="Gleipnir กายาสถิตอสูร ตอนที่ 1-13 ซับไทย [จบแล้ว]" src="picture/6.jpg"
+                            alt=""></a>
+                    <div>Gleipnir กายาสถิตอสูร ตอนที่ 1-13 ซับไทย [จบแล้ว]</div>
+                </div>
+                <div>
+                    <a href=""><img title="Hatena Illusion ตอนที่ 1-12 ซับไทย [จบแล้ว]" src="picture/7.jpg" alt=""></a>
+                    <div>Hatena Illusion ตอนที่ 1-12 ซับไทย [จบแล้ว]</div>
+                </div>
+                <div>
+                    <a href=""><img title=" Shingeki no Kyojin Season3 ผ่าพิภพไททัน ภาค3 ตอนที่ 1-22 ซับไทย [จบแล้ว]"
+                            src="picture/8.jpg" alt=""></a>
+                    <div>Shingeki no Kyojin Season3 ผ่าพิภพไททัน ภาค3 ตอนที่ 1-22 ซับไทย [จบแล้ว]</div>
+                </div>
+                <div>
+                    <a href=""><img
+                            title="Tower of God (Kami no Tou) ทาวเวอร์ออฟก๊อด หอคอยเทพเจ้า ตอนที่ 1-13 ซับไทย [จบแล้ว]"
+                            src="picture/9.jpg" alt=""></a>
+                    <div>Tower of God (Kami no Tou) ทาวเวอร์ออฟก๊อด หอคอยเทพเจ้า ตอนที่ 1-13 ซับไทย [จบแล้ว]</div>
+                </div>
+                <div>
+                    <a href=""><img
+                            title="Peter Grill to Kenja no Jikan ปีเตอร์กริลกับปราชญ์แห่งกาลเวลา ตอนที่ 1-2 ซับไทย [Uncen] (เมะใหม่)"
+                            src="picture/10.jpg" alt=""></a>
+                    <div>Peter Grill to Kenja no Jikan ปีเตอร์กริลกับปราชญ์แห่งกาลเวลา ตอนที่ 1-2 ซับไทย [Uncen]
+                        (เมะใหม่)
+                    </div>
+                </div>
+                <div>
+                    <a href=""><img title="Enen no Shouboutai ss2 หน่วยผจญคนไฟลุก ภาค2 ตอนที่ 1-3 ซับไทย (เมะใหม่)"
+                            src="picture/11.jpg" alt=""></a>
+                    <div>Enen no Shouboutai ss2 หน่วยผจญคนไฟลุก ภาค2 ตอนที่ 1-3 ซับไทย (เมะใหม่)</div>
+                </div>
+                <div>
+                    <a href=""><img title="Shironeko Project ZERO CHRONICLE ตอนที่ 1-12 ซับไทย+Raw [จบแล้ว]"
+                            src="picture/12.jpg" alt=""></a>
+                    <div>Shironeko Project ZERO CHRONICLE ตอนที่ 1-12 ซับไทย+Raw [จบแล้ว]</div>
+                </div>
+                <div>
+                    <a href=""><img title="Re Zero รีเซทชีวิต ฝ่าวิกฤตต่างโลก ภาค1 ตอนที่ 1-25 ซับไทย [จบแล้ว]+ONA"
+                            src="picture/13.jpg" alt=""></a>
+                    <div>Re Zero รีเซทชีวิต ฝ่าวิกฤตต่างโลก ภาค1 ตอนที่ 1-25 ซับไทย [จบแล้ว]+ONA</div>
+                </div>
+                <div>
+                    <a href=""><img title="Deca-Dence ตอนที่ 1-2 ซับไทย (เมะใหม่)" src="picture/14.jpg" alt=""></a>
+                    <div>Deca-Dence ตอนที่ 1-2 ซับไทย (เมะใหม่)</div>
+                </div>
+                <div>
+                    <a href=""><img title="One Piece วันพีช ซีซั่น 21 ดินแดนวาโนะ ตอนที่ 892-933 ซับไทย [ตอนใหม่ล่าสุด]"
+                            src="picture/15.jpg" alt=""></a>
+                    <div>One Piece วันพีช ซีซั่น 21 ดินแดนวาโนะ ตอนที่ 892-933 ซับไทย [ตอนใหม่ล่าสุด]</div>
+                </div>
+                <ul class="footer-bar">
+                    <li><a href="#1">1</a> </li>
+                    <li><a href="#2">2</a></li>
+                    <li><a href="#3">3</a></li>
+                    <li><a href="#4">4</a></li>
+                    <li><a href="#>>">>></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="content-head">
+            <div class="heading">
+                <h3 class="body-title">"กด Like ถูกใจ เพจด้วยนะ"</h3>
+            </div>
+            <div class="content-body">
+                <iframe src="" frameborder="0">"สำ หรับพื้นที่เพจ"</iframe>
+            </div>
+        </div>
+        <div id="body-mid">
+            <h3>
+                "หมวดแนะนำ"
+            </h3>
+        </div>
+        <div class="body-mid1">
+            <ul id="mid2">
+                <li><a href="">อนิเมะแนะนำ</a></li>
+                <li><a href="">อนิเมะมาใหม่</a></li>
+                <li><a href="">อนิเมะจบแล้ว</a></li>
+                <li><a href="">อนิเมะยังไม่จบแล้ว</a></li>
+                <li><a href="">อนิเมะภาคไทย</a></li>
+                <li><a href="">อนิเมะซับไทย</a></li>
+            </ul>
+        </div>
+    </div>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>cls

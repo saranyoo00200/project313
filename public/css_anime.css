@@ -1,0 +1,231 @@
+.logo {
+    background-color: rgb(43, 37, 37);
+    text-align: center;
+    color: white;
+}
+
+ul.menu{
+    list-style-type: none;
+    margin: 0 20px;
+    padding: 0px;
+    overflow: hidden;
+    background-color: rgb(43, 37, 37);
+
+}
+
+ul.menu li {
+    background-color: rgb(37, 35, 35);
+    float: left;
+}
+
+ul.menu li a {
+    display: block;
+    padding: 3px;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    position: relative;
+    border-radius: 5px;
+
+}
+ 
+li a:hover {
+    background-color: #555;
+    color: rgb(255, 255, 255);
+}
+
+.active {
+    background-color: #4CAF50;
+}
+/*.search-container*/
+.menu_search{
+    box-sizing: border-box;
+}
+
+.menu_search input[type=text] {
+    margin-top: 8px;
+    font-size: 15px;
+    border: none;
+     
+}
+.menu_search input[type=text] {
+    padding: 2px;
+    margin-top: 1px;
+    border: none;
+    font-size: 17px;
+  }
+.menu_search input[type=text] {
+      border: 2px solid #ccc;  
+ }
+.menu_search button {
+    width: auto;
+    padding: 4px;
+    background: #2196F3;
+    color: white;
+    font-size: 17px;
+    border: 1px solid grey;
+    border-left: none;
+    cursor: pointer;
+  }
+
+/* body-left */
+div.body-red h3 a{
+    text-decoration: none;
+    border-radius: 5px;
+   border: 1px solid black;
+   background-color: black;
+} 
+
+.body-red{
+    width: 78.5%;
+    position: absolute;
+}
+.body-red h3{
+    margin-top: 2%;
+    background-color: rgb(228, 85, 85);
+    padding: 1px;
+    border-radius: 5px;
+ }
+
+ div.body-red h3{
+     width: 70% ;
+     height: 500px;
+ }
+ 
+div#body-content{
+    background-color:rgb(61, 53, 53) ;
+    width: 55%;  
+    border: 1px solid rgb(228, 85, 85);
+    height: 1100px;
+}
+div#body-content{
+    position: absolute;
+     margin-top: 4.5%;
+}
+
+div.body-left{
+     width: 100%;
+     margin-left: 0px;
+}
+
+div div.body-left div{
+    background-color: black;
+    width: 23.5%;
+    float: left; 
+    margin: 5px;
+    border: 1px solid black;
+    padding: 5px;
+    position: relative;
+    
+}
+div div.body-left div div{
+    position: absolute;
+    bottom: 5px;
+    border: none;
+    opacity: 0.6;      /*opacity and filter ลดความเค้มแสง */
+    filter: alpha(opacity=40);
+    width: auto;
+    font-size: 13px;
+    color:white ;
+    text-align: center;
+    
+}
+ 
+div.body-left div img {
+    width: 100%;
+    height: 200px;
+}
+div ul.footer-bar li a{
+    padding: 5px;
+    color: rgb(252, 252, 252);
+    margin-left: 5px;
+}
+ul.footer-bar li{
+    float: left;
+}
+
+ div ul.footer-bar{
+padding: 5px;
+text-decoration: none;
+overflow: hidden;
+
+}
+ul.footer-bar{
+    position: absolute;
+    width: auto;
+    margin-left: center;
+    margin-top: 140%;  
+    }
+
+.footer-bar{
+    list-style-type: none;
+    margin: 0 20px;
+    padding: 0px;
+    overflow: hidden;
+    background-color: rgb(43, 37, 37);
+}
+
+div.content-head{
+    margin-left: 65%;
+}
+
+div.heading{
+    background-color: rgb(228, 85, 85);
+    border-radius: 5px; ;
+    height: 50px;
+    
+}
+
+h3.body-title{
+    width: 100%;
+}
+
+h3.body-title{
+    margin-top: 5.5%;
+}
+
+.content-body{
+    background-color: gray;
+    border: 1px solid rgb(228, 85, 85);
+    margin-top: -4%;
+    height: 300px;
+    width: 100% 
+
+}
+
+/*หมวดแนะนำ*/
+
+div#body-mid h3{
+    border-radius: 5px;
+    background-color: rgb(228, 85, 85);
+    width: 35%;
+    margin-left: 65%;
+    margin-top: 5%;
+    height: 50px;
+}
+
+div.body-mid1{
+    width: 35%;
+    height: auto;
+    margin-left: 65%;
+    margin-top: -2%;
+    background-color: rgb(41, 37, 37);
+    border: 1px solid rgb(228, 85, 85);
+}
+
+div.body-mid1 ul{
+border-radius: 5px;
+height: 400px;
+list-style-type: none;
+width: 93%;
+margin-top: 4%;
+    margin-left: 3.5%;
+    background-color: #201e1e;
+}
+
+div.body-mid1 ul li a{
+    display: block;
+    color: rgb(255, 255, 255);
+    padding: 8px 16px;
+    text-decoration: none;
+}
